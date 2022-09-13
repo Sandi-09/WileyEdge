@@ -25,8 +25,8 @@ public class StudentMain {
 		// s3.display();
 		Scanner sc = new Scanner(System.in);
 		ArrayList<Student> ls = new ArrayList<>();
-		ArrayList<Student>ls1=new ArrayList();
-		for (int i = 0; i < 3; i++) {
+		ArrayList<Student>ls8888=new ArrayList();
+		for (int i = 0; i < 10; i++) {
 
 			int regNo = sc.nextInt();
 			int dd = sc.nextInt();
