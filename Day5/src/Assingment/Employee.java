@@ -6,13 +6,13 @@ public class Employee {
 	private String empDept;
 	private int empBasicSalary;
 	private int grossSalary;
-	
 	public Employee(int empId, String empName, String empDept, int empBasicSalary) {
 		super();
 		this.empId = empId;
 		this.empName = empName;
 		this.empDept = empDept;
 		this.empBasicSalary = empBasicSalary;
+		calculateGrossSalary(empBasicSalary);
 	}
 public int getEmpId() {
 	return empId;
@@ -38,16 +38,22 @@ public int getEmpBasicSalary() {
 public void setEmpBasicSalary(int empBasicSalary) {
 	this.empBasicSalary = empBasicSalary;
 }
+public int getGrossSalary() {
+	return grossSalary;
+}
+public void setGrossSalary(int grossSalary) {
+	this.grossSalary = grossSalary;
+}
 
-
-public int calculateGrossSalary()
+public void calculateGrossSalary(int basicSalary)
 {
 	//int salary=0;
-	int basicSalary=this.empBasicSalary;
+	//int basicSalary=this.empBasicSalary;
 	int HRA=(int) (0.12*basicSalary);
 	int DA=(int) (0.8*basicSalary);
-	this.grossSalary=(int)(basicSalary+HRA+DA);
-	return this.grossSalary;
+	int gs=(int)(basicSalary+HRA+DA);
+	//System.out.println(gs);
+	setGrossSalary(gs);
 }
 @Override
 public boolean equals(Object obj) {
