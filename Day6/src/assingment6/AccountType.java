@@ -11,4 +11,5 @@ public enum AccountType {
 	public int getInterest() {
 		return i;
 	}
+	
 }

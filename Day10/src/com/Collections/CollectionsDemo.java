@@ -33,7 +33,7 @@ public class CollectionsDemo {
 		System.out.println();
 		//using iterator method to traverse the list
 		Iterator<Integer>nums=ls.iterator();                     //2,4,5
-		    System.out.println(nums+" "+ls.hashCode());
+		    System.out.println(nums+" "+ ls.get(0).hashCode());
 		   
 		    while(nums.hasNext()) {
 			int data = nums.next();
